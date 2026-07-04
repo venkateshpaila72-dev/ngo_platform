@@ -2,11 +2,21 @@ import logging
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from routes import ingest_routes
-from config.settings import validate_config
-from routes import ingest_routes, cluster_routes
-from routes import ingest_routes, cluster_routes, ngo_routes, match_routes, need_routes, task_routes
 
+from config.settings import validate_config
+from routes import (
+    ingest_routes,
+    cluster_routes,
+    ngo_routes,
+    match_routes,
+    need_routes,
+    task_routes,
+    volunteer_routes,
+    proof_routes,
+    chat_routes,
+    story_routes,
+    public_routes,
+)
 
 validate_config()
 
@@ -29,6 +39,11 @@ app.include_router(ngo_routes.router)
 app.include_router(match_routes.router)
 app.include_router(need_routes.router)
 app.include_router(task_routes.router)
+app.include_router(volunteer_routes.router)
+app.include_router(proof_routes.router)
+app.include_router(chat_routes.router)
+app.include_router(story_routes.router)
+app.include_router(public_routes.router)
 
 
 @app.get("/")

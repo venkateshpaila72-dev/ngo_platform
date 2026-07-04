@@ -4,8 +4,9 @@ from pydantic import BaseModel
 
 class SubTask(BaseModel):
     ngo_id: str
+    volunteer_id: Optional[str] = None
     quantity: Optional[float] = None
-    status: str = "assigned"   # "assigned" | "accepted" | "dropped" | "completed"
+    status: str = "assigned"   # "assigned" | "accepted" | "pending_verification" | "dropped" | "completed"
 
 
 class Task(BaseModel):
@@ -14,5 +15,5 @@ class Task(BaseModel):
     need_type: str
     total_quantity: Optional[float] = None
     unit: Optional[str] = None
-    status: str = "in_progress"   # "in_progress" | "partially_covered" | "verified"
+    status: str = "in_progress"
     sub_tasks: List[SubTask] = []

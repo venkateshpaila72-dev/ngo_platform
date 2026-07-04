@@ -10,6 +10,8 @@ COLUMN_MAP = {
     "required_supply": "need_type", "resource_gap": "need_type",
     "urgency": "severity", "severity": "severity", "priority": "severity",
     "notes": "raw_notes", "remarks": "raw_notes",
+    "quantity": "quantity", "amount": "quantity",
+    "unit": "unit",
 }
 
 VALID_SEVERITIES = {"low", "medium", "high", "critical"}
@@ -42,6 +44,15 @@ def _validate_row(row, row_index: int) -> tuple[bool, str]:
         return False, f"Row {row_index}: severity '{severity}' is not one of {VALID_SEVERITIES}"
 
     return True, ""
+
+
+def _parse_optional_float(value) -> float | None:
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return None
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return None
 
 
 def ingest_csv(file_bytes: bytes) -> dict:
@@ -80,6 +91,8 @@ def ingest_csv(file_bytes: bytes) -> dict:
             "need_type": str(row["need_type"]).strip().lower(),
             "severity": str(row["severity"]).strip().lower(),
             "status": "open",
+            "quantity": _parse_optional_float(row.get("quantity")) if "quantity" in df.columns else None,
+            "unit": str(row.get("unit")).strip() if "unit" in df.columns and pd.notna(row.get("unit")) else None,
             "raw_notes": str(row.get("raw_notes", "")) if "raw_notes" in df.columns and pd.notna(row.get("raw_notes")) else None,
         }
 

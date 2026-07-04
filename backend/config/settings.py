@@ -13,8 +13,15 @@ ENVIRONMENT = os.getenv("ENVIRONMENT", "development")
 NEEDS_COLLECTION = "needs"
 NGOS_COLLECTION = "ngos"
 TASKS_COLLECTION = "tasks"
+VOLUNTEERS_COLLECTION = "volunteers"
+PROOFS_COLLECTION = "proofs"
+CHAT_COLLECTION = "chat_messages"
 
-CLUSTER_RADIUS_KM = 15
+# Tuned during Phase 2 testing: 15km wrongly chained separate hotspots
+# together (a single bridging point merged a "water" cluster and a "food"
+# cluster into one). 5km correctly kept them separate. Do not change this
+# back to 15 without re-running the cluster separation test.
+CLUSTER_RADIUS_KM = 5
 MIN_SAMPLES_PER_CLUSTER = 1
 
 
