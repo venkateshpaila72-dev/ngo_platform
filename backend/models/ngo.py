@@ -14,6 +14,7 @@ class NGO(BaseModel):
     active_capacity: Dict[str, bool] = Field(default_factory=dict)  # need_type -> currently available
     reliability_score: float = 70.0                                 # 0-100, updated after task feedback
     contact_email: Optional[str] = None
+    password_hash: Optional[str] = None                             # never returned to the client
 
     @field_validator("capabilities")
     @classmethod

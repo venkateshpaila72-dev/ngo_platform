@@ -4,8 +4,9 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 from config.settings import NGOS_COLLECTION
-from models.ngo import NGO
+from models.need import Location
 from utils.firestore_helpers import add_document, get_all_documents, get_document, update_document
+from utils.security import hash_password, verify_password
 
 router = APIRouter()
 
@@ -14,18 +15,60 @@ class AvailabilityUpdate(BaseModel):
     active_capacity: Dict[str, bool]  # e.g. {"water": False}
 
 
+class NGORegisterRequest(BaseModel):
+    name: str
+    district: str
+    location: Location
+    contact_email: str
+    password: str
+    capabilities: Dict[str, int] = {}
+    active_capacity: Dict[str, bool] = {}
+
+
+class NGOLoginRequest(BaseModel):
+    contact_email: str
+    password: str
+
+
+def _strip_password(ngo: dict) -> dict:
+    return {k: v for k, v in ngo.items() if k != "password_hash"}
+
+
 @router.post("/ngos")
-def register_ngo(ngo: NGO):
-    """Registers a new NGO with its capability profile."""
-    data = ngo.dict(exclude={"id"})
+def register_ngo(body: NGORegisterRequest):
+    """Registers a new NGO (organization) with its capability profile and login credentials."""
+    all_ngos = get_all_documents(NGOS_COLLECTION)
+    if any(n.get("contact_email") == body.contact_email for n in all_ngos):
+        raise HTTPException(status_code=400, detail=f"An NGO with email '{body.contact_email}' already exists")
+
+    data = {
+        "name": body.name,
+        "district": body.district,
+        "location": body.location.dict(),
+        "contact_email": body.contact_email,
+        "password_hash": hash_password(body.password),
+        "capabilities": body.capabilities,
+        "active_capacity": body.active_capacity,
+        "reliability_score": 70.0,
+    }
     ngo_id = add_document(NGOS_COLLECTION, data)
-    return {"id": ngo_id, **data}
+    return _strip_password({"id": ngo_id, **data})
+
+
+@router.post("/ngos/login")
+def login_ngo(body: NGOLoginRequest):
+    """Organization login — mirrors volunteer login exactly."""
+    all_ngos = get_all_documents(NGOS_COLLECTION)
+    match = next((n for n in all_ngos if n.get("contact_email") == body.contact_email), None)
+    if match is None or not verify_password(body.password, match.get("password_hash", "")):
+        raise HTTPException(status_code=401, detail="Invalid email or password")
+    return _strip_password(match)
 
 
 @router.get("/ngos")
 def list_ngos():
     """Returns all registered NGOs."""
-    return {"ngos": get_all_documents(NGOS_COLLECTION)}
+    return {"ngos": [_strip_password(n) for n in get_all_documents(NGOS_COLLECTION)]}
 
 
 @router.get("/ngos/{ngo_id}")
@@ -34,7 +77,7 @@ def get_ngo(ngo_id: str):
     ngo = get_document(NGOS_COLLECTION, ngo_id)
     if ngo is None:
         raise HTTPException(status_code=404, detail="NGO not found")
-    return ngo
+    return _strip_password(ngo)
 
 
 @router.patch("/ngos/{ngo_id}/availability")
