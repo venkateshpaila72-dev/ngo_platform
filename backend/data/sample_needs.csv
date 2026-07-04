@@ -1,0 +1,8 @@
+Latitude,Longitude,Required Supply,Urgency,Notes
+16.506,80.648,water,high,No water source within 3km
+16.510,80.652,water,critical,Well collapsed last week
+16.620,80.710,food,medium,Crop failure due to drought
+16.625,80.715,food,medium,Same village cluster as above
+16.515,80.649,water,high,Adjacent to critical zone
+16.300,80.900,medical,critical,No clinic access for 20km
+16.618,80.712,water,low,Minor shortage reported

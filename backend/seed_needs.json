@@ -1,0 +1,1430 @@
+[
+  {
+    "location": {
+      "lat": 13.218455,
+      "lng": 79.098573
+    },
+    "need_type": "education",
+    "severity": "high",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "Children dropping out due to long travel distance",
+    "reported_at": "2026-07-02T12:19:37.008285Z"
+  },
+  {
+    "location": {
+      "lat": 16.301762,
+      "lng": 80.424771
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-06-29T02:19:37.007148Z"
+  },
+  {
+    "location": {
+      "lat": 16.603903,
+      "lng": 80.734765
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Homes damaged in recent flooding, families displaced",
+    "reported_at": "2026-06-07T22:19:37.007469Z"
+  },
+  {
+    "location": {
+      "lat": 15.659397,
+      "lng": 79.98949
+    },
+    "need_type": "food",
+    "severity": "medium",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Anganwadi center short on supplies for children",
+    "reported_at": "2026-06-01T22:19:37.007738Z"
+  },
+  {
+    "location": {
+      "lat": 16.47748,
+      "lng": 80.596563
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-05-09T02:19:37.008810Z"
+  },
+  {
+    "location": {
+      "lat": 16.603164,
+      "lng": 80.741351
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Roof damage from storm, monsoon season approaching",
+    "reported_at": "2026-06-20T22:19:37.007582Z"
+  },
+  {
+    "location": {
+      "lat": 13.194877,
+      "lng": 79.104387
+    },
+    "need_type": "education",
+    "severity": "critical",
+    "status": "resolved",
+    "district": "Chittoor",
+    "description": "School building damaged, classes held outdoors",
+    "reported_at": "2026-05-16T22:19:37.008319Z"
+  },
+  {
+    "location": {
+      "lat": 16.610131,
+      "lng": 80.708492
+    },
+    "need_type": "shelter",
+    "severity": "critical",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Temporary shelter overcrowded, needs expansion",
+    "reported_at": "2026-06-30T00:19:37.007425Z"
+  },
+  {
+    "location": {
+      "lat": 14.441978,
+      "lng": 79.997331
+    },
+    "need_type": "medical",
+    "severity": "high",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Elderly population needs regular checkup access",
+    "reported_at": "2026-05-15T19:19:37.008069Z"
+  },
+  {
+    "location": {
+      "lat": 13.227549,
+      "lng": 79.081654
+    },
+    "need_type": "education",
+    "severity": "high",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "No teacher assigned for past semester",
+    "reported_at": "2026-06-15T02:19:37.008360Z"
+  },
+  {
+    "location": {
+      "lat": 16.605894,
+      "lng": 80.726497
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Families living in relief camps for over a month",
+    "reported_at": "2026-06-18T18:19:37.007557Z"
+  },
+  {
+    "location": {
+      "lat": 14.441157,
+      "lng": 79.978862
+    },
+    "need_type": "medical",
+    "severity": "high",
+    "status": "open",
+    "district": "Nellore",
+    "description": "No doctor visit in primary health center for a month",
+    "reported_at": "2026-05-18T02:19:37.008100Z"
+  },
+  {
+    "location": {
+      "lat": 16.592358,
+      "lng": 80.735269
+    },
+    "need_type": "shelter",
+    "severity": "critical",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Homes damaged in recent flooding, families displaced",
+    "reported_at": "2026-05-12T08:19:37.007574Z"
+  },
+  {
+    "location": {
+      "lat": 16.483955,
+      "lng": 80.624094
+    },
+    "need_type": "education",
+    "severity": "critical",
+    "status": "open",
+    "district": "Guntur",
+    "description": "School building damaged, classes held outdoors",
+    "reported_at": "2026-06-18T23:19:37.008518Z"
+  },
+  {
+    "location": {
+      "lat": 14.415247,
+      "lng": 79.992583
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-06-06T05:19:37.008266Z"
+  },
+  {
+    "location": {
+      "lat": 14.438729,
+      "lng": 79.979608
+    },
+    "need_type": "medical",
+    "severity": "high",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Pregnant women unable to reach nearest hospital",
+    "reported_at": "2026-05-12T17:19:37.007953Z"
+  },
+  {
+    "location": {
+      "lat": 16.609324,
+      "lng": 80.724076
+    },
+    "need_type": "education",
+    "severity": "low",
+    "status": "closed",
+    "district": "Krishna",
+    "description": "School building damaged, classes held outdoors",
+    "reported_at": "2026-05-18T09:19:37.007417Z"
+  },
+  {
+    "location": {
+      "lat": 16.507567,
+      "lng": 80.595083
+    },
+    "need_type": "medical",
+    "severity": "critical",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Pregnant women unable to reach nearest hospital",
+    "reported_at": "2026-05-18T09:19:37.008693Z"
+  },
+  {
+    "location": {
+      "lat": 14.435557,
+      "lng": 79.989582
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Temporary shelter overcrowded, needs expansion",
+    "reported_at": "2026-05-14T01:19:37.008255Z"
+  },
+  {
+    "location": {
+      "lat": 17.687162,
+      "lng": 83.221189
+    },
+    "need_type": "food",
+    "severity": "low",
+    "status": "open",
+    "district": "Visakhapatnam",
+    "description": "Crop failure due to drought, no stored grain",
+    "reported_at": "2026-07-04T08:19:37.008867Z"
+  },
+  {
+    "location": {
+      "lat": 13.21962,
+      "lng": 79.099554
+    },
+    "need_type": "education",
+    "severity": "low",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "Lack of basic learning materials and books",
+    "reported_at": "2026-06-12T09:19:37.008473Z"
+  },
+  {
+    "location": {
+      "lat": 16.62271,
+      "lng": 80.731907
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Families living in relief camps for over a month",
+    "reported_at": "2026-05-19T09:19:37.007383Z"
+  },
+  {
+    "location": {
+      "lat": 16.617291,
+      "lng": 80.729433
+    },
+    "need_type": "shelter",
+    "severity": "critical",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Homes damaged in recent flooding, families displaced",
+    "reported_at": "2026-05-31T13:19:37.007524Z"
+  },
+  {
+    "location": {
+      "lat": 16.32322,
+      "lng": 80.435024
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Tanker supply irregular, families rationing",
+    "reported_at": "2026-06-28T17:19:37.007135Z"
+  },
+  {
+    "location": {
+      "lat": 15.908943,
+      "lng": 79.739811
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "resolved",
+    "district": "Prakasam",
+    "description": "Borewell dried up, nearest source 6km away",
+    "reported_at": "2026-06-02T21:19:37.008905Z"
+  },
+  {
+    "location": {
+      "lat": 16.482606,
+      "lng": 80.617036
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "closed",
+    "district": "Guntur",
+    "description": "Borewell dried up, nearest source 6km away",
+    "reported_at": "2026-06-06T14:19:37.008526Z"
+  },
+  {
+    "location": {
+      "lat": 16.603787,
+      "lng": 80.730423
+    },
+    "need_type": "shelter",
+    "severity": "medium",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Temporary shelter overcrowded, needs expansion",
+    "reported_at": "2026-05-31T15:19:37.007367Z"
+  },
+  {
+    "location": {
+      "lat": 16.325453,
+      "lng": 80.42671
+    },
+    "need_type": "water",
+    "severity": "low",
+    "status": "resolved",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-05-16T10:19:37.007159Z"
+  },
+  {
+    "location": {
+      "lat": 18.166486,
+      "lng": 83.419205
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Srikakulam",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-06-02T12:19:37.008887Z"
+  },
+  {
+    "location": {
+      "lat": 16.29907,
+      "lng": 80.449063
+    },
+    "need_type": "food",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Crop failure due to drought, no stored grain",
+    "reported_at": "2026-05-23T11:19:37.007170Z"
+  },
+  {
+    "location": {
+      "lat": 16.299406,
+      "lng": 80.446299
+    },
+    "need_type": "water",
+    "severity": "critical",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-07-02T19:19:37.006869Z"
+  },
+  {
+    "location": {
+      "lat": 15.661221,
+      "lng": 79.95906
+    },
+    "need_type": "medical",
+    "severity": "low",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Seasonal fever outbreak, no medicine stock",
+    "reported_at": "2026-06-17T09:19:37.007901Z"
+  },
+  {
+    "location": {
+      "lat": 16.602351,
+      "lng": 80.727086
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Borewell dried up, nearest source 6km away",
+    "reported_at": "2026-06-06T02:19:37.007392Z"
+  },
+  {
+    "location": {
+      "lat": 14.460317,
+      "lng": 79.965987
+    },
+    "need_type": "education",
+    "severity": "high",
+    "status": "resolved",
+    "district": "Nellore",
+    "description": "Children dropping out due to long travel distance",
+    "reported_at": "2026-06-30T03:19:37.007996Z"
+  },
+  {
+    "location": {
+      "lat": 16.480598,
+      "lng": 80.61954
+    },
+    "need_type": "water",
+    "severity": "low",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-06-27T05:19:37.008838Z"
+  },
+  {
+    "location": {
+      "lat": 16.498365,
+      "lng": 80.599522
+    },
+    "need_type": "water",
+    "severity": "critical",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Tanker supply irregular, families rationing",
+    "reported_at": "2026-05-11T15:19:37.008855Z"
+  },
+  {
+    "location": {
+      "lat": 14.441816,
+      "lng": 79.983846
+    },
+    "need_type": "medical",
+    "severity": "medium",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Seasonal fever outbreak, no medicine stock",
+    "reported_at": "2026-06-07T14:19:37.008005Z"
+  },
+  {
+    "location": {
+      "lat": 15.67363,
+      "lng": 79.968836
+    },
+    "need_type": "food",
+    "severity": "high",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Daily wage families unable to afford rations",
+    "reported_at": "2026-06-03T07:19:37.007818Z"
+  },
+  {
+    "location": {
+      "lat": 16.309116,
+      "lng": 80.446092
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-06-06T01:19:37.007116Z"
+  },
+  {
+    "location": {
+      "lat": 14.449267,
+      "lng": 79.998089
+    },
+    "need_type": "medical",
+    "severity": "high",
+    "status": "open",
+    "district": "Nellore",
+    "description": "No doctor visit in primary health center for a month",
+    "reported_at": "2026-06-01T13:19:37.008031Z"
+  },
+  {
+    "location": {
+      "lat": 17.0013,
+      "lng": 81.799638
+    },
+    "need_type": "food",
+    "severity": "medium",
+    "status": "open",
+    "district": "West Godavari",
+    "description": "Daily wage families unable to afford rations",
+    "reported_at": "2026-06-01T16:19:37.008878Z"
+  },
+  {
+    "location": {
+      "lat": 15.637434,
+      "lng": 79.953651
+    },
+    "need_type": "food",
+    "severity": "low",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Anganwadi center short on supplies for children",
+    "reported_at": "2026-05-19T09:19:37.007696Z"
+  },
+  {
+    "location": {
+      "lat": 15.66026,
+      "lng": 79.972939
+    },
+    "need_type": "food",
+    "severity": "critical",
+    "status": "closed",
+    "district": "Prakasam",
+    "description": "Daily wage families unable to afford rations",
+    "reported_at": "2026-06-06T11:19:37.007892Z"
+  },
+  {
+    "location": {
+      "lat": 16.470533,
+      "lng": 80.615188
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-05-07T01:19:37.008549Z"
+  },
+  {
+    "location": {
+      "lat": 16.493123,
+      "lng": 80.578429
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-06-30T02:19:37.008847Z"
+  },
+  {
+    "location": {
+      "lat": 13.228687,
+      "lng": 79.093444
+    },
+    "need_type": "education",
+    "severity": "high",
+    "status": "resolved",
+    "district": "Chittoor",
+    "description": "No teacher assigned for past semester",
+    "reported_at": "2026-06-03T18:19:37.008491Z"
+  },
+  {
+    "location": {
+      "lat": 16.599256,
+      "lng": 80.730557
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Homes damaged in recent flooding, families displaced",
+    "reported_at": "2026-05-19T23:19:37.007358Z"
+  },
+  {
+    "location": {
+      "lat": 16.48354,
+      "lng": 80.584611
+    },
+    "need_type": "water",
+    "severity": "critical",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Tanker supply irregular, families rationing",
+    "reported_at": "2026-07-04T01:19:37.008574Z"
+  },
+  {
+    "location": {
+      "lat": 16.63557,
+      "lng": 80.720346
+    },
+    "need_type": "shelter",
+    "severity": "medium",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Roof damage from storm, monsoon season approaching",
+    "reported_at": "2026-06-06T21:19:37.007408Z"
+  },
+  {
+    "location": {
+      "lat": 16.614339,
+      "lng": 80.723937
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Temporary shelter overcrowded, needs expansion",
+    "reported_at": "2026-05-10T14:19:37.007591Z"
+  },
+  {
+    "location": {
+      "lat": 13.220159,
+      "lng": 79.10616
+    },
+    "need_type": "education",
+    "severity": "critical",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "Lack of basic learning materials and books",
+    "reported_at": "2026-05-25T04:19:37.008327Z"
+  },
+  {
+    "location": {
+      "lat": 14.464497,
+      "lng": 80.001587
+    },
+    "need_type": "food",
+    "severity": "medium",
+    "status": "open",
+    "district": "Nellore",
+    "description": "PDS shop out of stock for 2 weeks",
+    "reported_at": "2026-05-28T19:19:37.007979Z"
+  },
+  {
+    "location": {
+      "lat": 16.478198,
+      "lng": 80.598499
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-05-15T02:19:37.008639Z"
+  },
+  {
+    "location": {
+      "lat": 16.612792,
+      "lng": 80.703136
+    },
+    "need_type": "shelter",
+    "severity": "critical",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Homes damaged in recent flooding, families displaced",
+    "reported_at": "2026-05-09T16:19:37.007549Z"
+  },
+  {
+    "location": {
+      "lat": 14.447632,
+      "lng": 79.988869
+    },
+    "need_type": "food",
+    "severity": "high",
+    "status": "resolved",
+    "district": "Nellore",
+    "description": "Anganwadi center short on supplies for children",
+    "reported_at": "2026-06-28T13:19:37.008143Z"
+  },
+  {
+    "location": {
+      "lat": 16.308882,
+      "lng": 80.432484
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-06-26T03:19:37.007283Z"
+  },
+  {
+    "location": {
+      "lat": 16.307176,
+      "lng": 80.433782
+    },
+    "need_type": "medical",
+    "severity": "medium",
+    "status": "closed",
+    "district": "Guntur",
+    "description": "No doctor visit in primary health center for a month",
+    "reported_at": "2026-05-27T09:19:37.007322Z"
+  },
+  {
+    "location": {
+      "lat": 16.506288,
+      "lng": 80.634793
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Tanker supply irregular, families rationing",
+    "reported_at": "2026-06-19T23:19:37.008615Z"
+  },
+  {
+    "location": {
+      "lat": 14.42653,
+      "lng": 79.988789
+    },
+    "need_type": "medical",
+    "severity": "medium",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Pregnant women unable to reach nearest hospital",
+    "reported_at": "2026-06-14T12:19:37.008013Z"
+  },
+  {
+    "location": {
+      "lat": 16.496413,
+      "lng": 80.634918
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "closed",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-05-09T06:19:37.008820Z"
+  },
+  {
+    "location": {
+      "lat": 16.612035,
+      "lng": 80.725957
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Temporary shelter overcrowded, needs expansion",
+    "reported_at": "2026-06-08T04:19:37.007400Z"
+  },
+  {
+    "location": {
+      "lat": 16.985258,
+      "lng": 82.243723
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "East Godavari",
+    "description": "Temporary shelter overcrowded, needs expansion",
+    "reported_at": "2026-06-17T00:19:37.008913Z"
+  },
+  {
+    "location": {
+      "lat": 15.670825,
+      "lng": 79.954542
+    },
+    "need_type": "food",
+    "severity": "high",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Anganwadi center short on supplies for children",
+    "reported_at": "2026-05-05T19:19:37.007687Z"
+  },
+  {
+    "location": {
+      "lat": 16.579304,
+      "lng": 80.720693
+    },
+    "need_type": "food",
+    "severity": "critical",
+    "status": "resolved",
+    "district": "Krishna",
+    "description": "Crop failure due to drought, no stored grain",
+    "reported_at": "2026-06-17T14:19:37.007631Z"
+  },
+  {
+    "location": {
+      "lat": 16.284363,
+      "lng": 80.438175
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-06-16T23:19:37.007180Z"
+  },
+  {
+    "location": {
+      "lat": 13.207637,
+      "lng": 79.076307
+    },
+    "need_type": "education",
+    "severity": "critical",
+    "status": "resolved",
+    "district": "Chittoor",
+    "description": "No teacher assigned for past semester",
+    "reported_at": "2026-06-02T21:19:37.008395Z"
+  },
+  {
+    "location": {
+      "lat": 15.6696,
+      "lng": 79.979742
+    },
+    "need_type": "food",
+    "severity": "medium",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Crop failure due to drought, no stored grain",
+    "reported_at": "2026-07-03T18:19:37.007746Z"
+  },
+  {
+    "location": {
+      "lat": 16.480629,
+      "lng": 80.597681
+    },
+    "need_type": "water",
+    "severity": "critical",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-06-30T05:19:37.008557Z"
+  },
+  {
+    "location": {
+      "lat": 16.310185,
+      "lng": 80.415205
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-06-18T03:19:37.007339Z"
+  },
+  {
+    "location": {
+      "lat": 15.65467,
+      "lng": 79.966607
+    },
+    "need_type": "food",
+    "severity": "medium",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Crop failure due to drought, no stored grain",
+    "reported_at": "2026-06-07T22:19:37.007721Z"
+  },
+  {
+    "location": {
+      "lat": 16.302683,
+      "lng": 80.410984
+    },
+    "need_type": "water",
+    "severity": "critical",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-06-17T17:19:37.007254Z"
+  },
+  {
+    "location": {
+      "lat": 14.420153,
+      "lng": 79.98439
+    },
+    "need_type": "medical",
+    "severity": "medium",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Seasonal fever outbreak, no medicine stock",
+    "reported_at": "2026-07-01T11:19:37.008239Z"
+  },
+  {
+    "location": {
+      "lat": 16.620754,
+      "lng": 80.724549
+    },
+    "need_type": "education",
+    "severity": "high",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Lack of basic learning materials and books",
+    "reported_at": "2026-05-08T03:19:37.007350Z"
+  },
+  {
+    "location": {
+      "lat": 13.212536,
+      "lng": 79.090726
+    },
+    "need_type": "education",
+    "severity": "high",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "School building damaged, classes held outdoors",
+    "reported_at": "2026-05-23T02:19:37.008344Z"
+  },
+  {
+    "location": {
+      "lat": 13.240666,
+      "lng": 79.107965
+    },
+    "need_type": "education",
+    "severity": "medium",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "Children dropping out due to long travel distance",
+    "reported_at": "2026-05-13T19:19:37.008459Z"
+  },
+  {
+    "location": {
+      "lat": 16.460044,
+      "lng": 80.597764
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-06-01T06:19:37.008540Z"
+  },
+  {
+    "location": {
+      "lat": 13.214452,
+      "lng": 79.101347
+    },
+    "need_type": "education",
+    "severity": "medium",
+    "status": "resolved",
+    "district": "Chittoor",
+    "description": "School building damaged, classes held outdoors",
+    "reported_at": "2026-05-09T06:19:37.008310Z"
+  },
+  {
+    "location": {
+      "lat": 16.327164,
+      "lng": 80.430159
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "resolved",
+    "district": "Guntur",
+    "description": "Borewell dried up, nearest source 6km away",
+    "reported_at": "2026-06-10T07:19:37.007293Z"
+  },
+  {
+    "location": {
+      "lat": 16.297123,
+      "lng": 80.455921
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Tanker supply irregular, families rationing",
+    "reported_at": "2026-05-15T23:19:37.007302Z"
+  },
+  {
+    "location": {
+      "lat": 16.332471,
+      "lng": 80.440985
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "resolved",
+    "district": "Guntur",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-06-25T11:19:37.007272Z"
+  },
+  {
+    "location": {
+      "lat": 14.466299,
+      "lng": 79.993815
+    },
+    "need_type": "education",
+    "severity": "low",
+    "status": "resolved",
+    "district": "Nellore",
+    "description": "No teacher assigned for past semester",
+    "reported_at": "2026-06-27T21:19:37.007988Z"
+  },
+  {
+    "location": {
+      "lat": 16.614927,
+      "lng": 80.729342
+    },
+    "need_type": "shelter",
+    "severity": "medium",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Homes damaged in recent flooding, families displaced",
+    "reported_at": "2026-05-23T06:19:37.007375Z"
+  },
+  {
+    "location": {
+      "lat": 15.635088,
+      "lng": 79.985222
+    },
+    "need_type": "food",
+    "severity": "low",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Crop failure due to drought, no stored grain",
+    "reported_at": "2026-06-22T21:19:37.007870Z"
+  },
+  {
+    "location": {
+      "lat": 16.602023,
+      "lng": 80.732503
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Temporary shelter overcrowded, needs expansion",
+    "reported_at": "2026-05-18T05:19:37.007565Z"
+  },
+  {
+    "location": {
+      "lat": 13.212679,
+      "lng": 79.099204
+    },
+    "need_type": "education",
+    "severity": "medium",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "Lack of basic learning materials and books",
+    "reported_at": "2026-06-22T00:19:37.008413Z"
+  },
+  {
+    "location": {
+      "lat": 14.438195,
+      "lng": 80.001762
+    },
+    "need_type": "medical",
+    "severity": "high",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Seasonal fever outbreak, no medicine stock",
+    "reported_at": "2026-05-26T02:19:37.007936Z"
+  },
+  {
+    "location": {
+      "lat": 15.632681,
+      "lng": 79.949627
+    },
+    "need_type": "food",
+    "severity": "low",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "PDS shop out of stock for 2 weeks",
+    "reported_at": "2026-06-01T02:19:37.007704Z"
+  },
+  {
+    "location": {
+      "lat": 16.488063,
+      "lng": 80.618865
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "resolved",
+    "district": "Guntur",
+    "description": "Tanker supply irregular, families rationing",
+    "reported_at": "2026-06-27T22:19:37.008743Z"
+  },
+  {
+    "location": {
+      "lat": 14.428813,
+      "lng": 79.99966
+    },
+    "need_type": "medical",
+    "severity": "critical",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Seasonal fever outbreak, no medicine stock",
+    "reported_at": "2026-06-03T12:19:37.007928Z"
+  },
+  {
+    "location": {
+      "lat": 15.644424,
+      "lng": 79.974576
+    },
+    "need_type": "food",
+    "severity": "high",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Daily wage families unable to afford rations",
+    "reported_at": "2026-06-08T09:19:37.007910Z"
+  },
+  {
+    "location": {
+      "lat": 16.497122,
+      "lng": 80.594972
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-06-06T12:19:37.008829Z"
+  },
+  {
+    "location": {
+      "lat": 15.65048,
+      "lng": 79.948236
+    },
+    "need_type": "food",
+    "severity": "medium",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Anganwadi center short on supplies for children",
+    "reported_at": "2026-06-05T05:19:37.007730Z"
+  },
+  {
+    "location": {
+      "lat": 15.649672,
+      "lng": 79.984374
+    },
+    "need_type": "food",
+    "severity": "high",
+    "status": "resolved",
+    "district": "Prakasam",
+    "description": "PDS shop out of stock for 2 weeks",
+    "reported_at": "2026-05-11T01:19:37.007918Z"
+  },
+  {
+    "location": {
+      "lat": 16.607378,
+      "lng": 80.726587
+    },
+    "need_type": "shelter",
+    "severity": "medium",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Roof damage from storm, monsoon season approaching",
+    "reported_at": "2026-05-25T23:19:37.007540Z"
+  },
+  {
+    "location": {
+      "lat": 14.417407,
+      "lng": 79.96746
+    },
+    "need_type": "medical",
+    "severity": "low",
+    "status": "resolved",
+    "district": "Nellore",
+    "description": "No doctor visit in primary health center for a month",
+    "reported_at": "2026-05-17T19:19:37.007962Z"
+  },
+  {
+    "location": {
+      "lat": 16.494068,
+      "lng": 80.628443
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Groundwater contaminated, families reporting illness",
+    "reported_at": "2026-05-06T21:19:37.008791Z"
+  },
+  {
+    "location": {
+      "lat": 16.628248,
+      "lng": 80.734732
+    },
+    "need_type": "shelter",
+    "severity": "medium",
+    "status": "open",
+    "district": "Krishna",
+    "description": "Temporary shelter overcrowded, needs expansion",
+    "reported_at": "2026-05-22T23:19:37.007506Z"
+  },
+  {
+    "location": {
+      "lat": 13.199814,
+      "lng": 79.118419
+    },
+    "need_type": "education",
+    "severity": "medium",
+    "status": "resolved",
+    "district": "Chittoor",
+    "description": "Lack of basic learning materials and books",
+    "reported_at": "2026-05-24T17:19:37.008508Z"
+  },
+  {
+    "location": {
+      "lat": 13.624686,
+      "lng": 79.421752
+    },
+    "need_type": "education",
+    "severity": "critical",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "Children dropping out due to long travel distance",
+    "reported_at": "2026-06-04T23:19:37.008896Z"
+  },
+  {
+    "location": {
+      "lat": 16.502879,
+      "lng": 80.607732
+    },
+    "need_type": "education",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Lack of basic learning materials and books",
+    "reported_at": "2026-06-28T12:19:37.008566Z"
+  },
+  {
+    "location": {
+      "lat": 16.464949,
+      "lng": 80.635195
+    },
+    "need_type": "shelter",
+    "severity": "high",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Roof damage from storm, monsoon season approaching",
+    "reported_at": "2026-06-29T07:19:37.008706Z"
+  },
+  {
+    "location": {
+      "lat": 13.217429,
+      "lng": 79.100227
+    },
+    "need_type": "education",
+    "severity": "medium",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "No teacher assigned for past semester",
+    "reported_at": "2026-06-17T02:19:37.008352Z"
+  },
+  {
+    "location": {
+      "lat": 16.304499,
+      "lng": 80.458326
+    },
+    "need_type": "water",
+    "severity": "medium",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Borewell dried up, nearest source 6km away",
+    "reported_at": "2026-06-28T20:19:37.007330Z"
+  },
+  {
+    "location": {
+      "lat": 13.215267,
+      "lng": 79.091177
+    },
+    "need_type": "education",
+    "severity": "high",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "Lack of basic learning materials and books",
+    "reported_at": "2026-06-20T06:19:37.008482Z"
+  },
+  {
+    "location": {
+      "lat": 16.496342,
+      "lng": 80.620383
+    },
+    "need_type": "water",
+    "severity": "low",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Borewell dried up, nearest source 6km away",
+    "reported_at": "2026-06-15T05:19:37.008629Z"
+  },
+  {
+    "location": {
+      "lat": 16.297293,
+      "lng": 80.438546
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Guntur",
+    "description": "Hand pump broken for 3 weeks, no repair yet",
+    "reported_at": "2026-06-02T16:19:37.007311Z"
+  },
+  {
+    "location": {
+      "lat": 14.44478,
+      "lng": 79.98803
+    },
+    "need_type": "medical",
+    "severity": "low",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Seasonal fever outbreak, no medicine stock",
+    "reported_at": "2026-07-01T11:19:37.007944Z"
+  },
+  {
+    "location": {
+      "lat": 13.23756,
+      "lng": 79.074096
+    },
+    "need_type": "education",
+    "severity": "medium",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "Children dropping out due to long travel distance",
+    "reported_at": "2026-06-06T16:19:37.008302Z"
+  },
+  {
+    "location": {
+      "lat": 14.441291,
+      "lng": 79.990435
+    },
+    "need_type": "water",
+    "severity": "high",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Borewell dried up, nearest source 6km away",
+    "reported_at": "2026-06-03T09:19:37.008022Z"
+  },
+  {
+    "location": {
+      "lat": 14.450115,
+      "lng": 79.985864
+    },
+    "need_type": "food",
+    "severity": "low",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Daily wage families unable to afford rations",
+    "reported_at": "2026-05-21T11:19:37.007970Z"
+  },
+  {
+    "location": {
+      "lat": 15.659664,
+      "lng": 79.979036
+    },
+    "need_type": "food",
+    "severity": "medium",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Crop failure due to drought, no stored grain",
+    "reported_at": "2026-07-02T22:19:37.007675Z"
+  },
+  {
+    "location": {
+      "lat": 14.447008,
+      "lng": 79.98881
+    },
+    "need_type": "medical",
+    "severity": "medium",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Pregnant women unable to reach nearest hospital",
+    "reported_at": "2026-06-06T20:19:37.008087Z"
+  },
+  {
+    "location": {
+      "lat": 13.226851,
+      "lng": 79.096702
+    },
+    "need_type": "education",
+    "severity": "medium",
+    "status": "resolved",
+    "district": "Chittoor",
+    "description": "No teacher assigned for past semester",
+    "reported_at": "2026-06-07T16:19:37.008293Z"
+  },
+  {
+    "location": {
+      "lat": 15.656946,
+      "lng": 79.967279
+    },
+    "need_type": "food",
+    "severity": "critical",
+    "status": "resolved",
+    "district": "Prakasam",
+    "description": "Anganwadi center short on supplies for children",
+    "reported_at": "2026-05-05T05:19:37.007883Z"
+  },
+  {
+    "location": {
+      "lat": 15.676191,
+      "lng": 79.968527
+    },
+    "need_type": "food",
+    "severity": "critical",
+    "status": "open",
+    "district": "Prakasam",
+    "description": "Anganwadi center short on supplies for children",
+    "reported_at": "2026-05-23T16:19:37.007713Z"
+  },
+  {
+    "location": {
+      "lat": 13.205459,
+      "lng": 79.105592
+    },
+    "need_type": "education",
+    "severity": "low",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "School building damaged, classes held outdoors",
+    "reported_at": "2026-05-19T15:19:37.008499Z"
+  },
+  {
+    "location": {
+      "lat": 14.436319,
+      "lng": 79.966463
+    },
+    "need_type": "medical",
+    "severity": "low",
+    "status": "open",
+    "district": "Nellore",
+    "description": "Pregnant women unable to reach nearest hospital",
+    "reported_at": "2026-05-21T15:19:37.008154Z"
+  },
+  {
+    "location": {
+      "lat": 13.220621,
+      "lng": 79.111693
+    },
+    "need_type": "shelter",
+    "severity": "critical",
+    "status": "open",
+    "district": "Chittoor",
+    "description": "Temporary shelter overcrowded, needs expansion",
+    "reported_at": "2026-06-17T22:19:37.008277Z"
+  },
+  {
+    "location": {
+      "lat": 13.21204,
+      "lng": 79.118641
+    },
+    "need_type": "shelter",
+    "severity": "medium",
+    "status": "resolved",
+    "district": "Chittoor",
+    "description": "Families living in relief camps for over a month",
+    "reported_at": "2026-06-15T22:19:37.008336Z"
+  }
+]
