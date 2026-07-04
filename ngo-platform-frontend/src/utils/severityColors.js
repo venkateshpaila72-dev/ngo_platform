@@ -1,30 +1,32 @@
-// Maps backend severity/status strings to Tailwind color classes.
-export const severityColor = (severity) => {
-  switch (severity) {
-    case 'critical': return 'bg-critical text-white';
-    case 'high': return 'bg-warning text-white';
-    case 'medium': return 'bg-accent text-white';
-    case 'low': return 'bg-success text-white';
-    default: return 'bg-muted text-white';
-  }
+// Severity: how bad a single need is.
+// Status: where a need currently stands in the resolution pipeline.
+// Both reuse the same theme colors so the whole app reads consistently:
+// green = good/resolved, orange/amber = in progress or needs help,
+// red = urgent/open/critical.
+
+export const SEVERITY_STYLES = {
+  low: { badge: 'bg-success text-white', hex: '#059669' },
+  medium: { badge: 'bg-accent text-white', hex: '#D97706' },
+  high: { badge: 'bg-warning text-white', hex: '#EA580C' },
+  critical: { badge: 'bg-critical text-white', hex: '#DC2626' },
 };
 
-// Maps need/task status to a pin/badge color for the heatmap and dashboards.
-export const statusColor = (status) => {
-  switch (status) {
-    case 'open':
-    case 'in_progress':
-      return 'bg-critical text-white';
-    case 'assigned':
-    case 'partially_covered':
-      return 'bg-warning text-white';
-    case 'resolved':
-    case 'verified':
-      return 'bg-success text-white';
-    case 'partially_resolved':
-    case 'resolved_partial':
-      return 'bg-accent text-white';
-    default:
-      return 'bg-muted text-white';
-  }
+export const STATUS_STYLES = {
+  open: { badge: 'bg-critical text-white', hex: '#DC2626' },
+  assigned: { badge: 'bg-warning text-white', hex: '#EA580C' },
+  resolved: { badge: 'bg-success text-white', hex: '#059669' },
+  partially_resolved: { badge: 'bg-accent text-white', hex: '#D97706' },
 };
+
+const FALLBACK = { badge: 'bg-muted text-white', hex: '#64748B' };
+
+export const getSeverityBadgeClass = (severity) =>
+  (SEVERITY_STYLES[severity] || FALLBACK).badge;
+
+export const getSeverityHex = (severity) =>
+  (SEVERITY_STYLES[severity] || FALLBACK).hex;
+
+export const getStatusBadgeClass = (status) =>
+  (STATUS_STYLES[status] || FALLBACK).badge;
+
+export const getStatusHex = (status) => (STATUS_STYLES[status] || FALLBACK).hex;
