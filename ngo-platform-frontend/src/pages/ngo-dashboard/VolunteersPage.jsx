@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 import DashboardLayout from '../../components/common/DashboardLayout.jsx';
 import LoadingSpinner from '../../components/common/LoadingSpinner.jsx';
-import VolunteerForm from '../../components/volunteers/VolunteerForm.jsx';
-import VolunteerList from '../../components/volunteers/VolunteerList.jsx';
+import VolunteerForm from '../../components/common/volunteers/VolunteerForm.jsx';
+import VolunteerList from '../../components/common/volunteers/VolunteerList.jsx';
 import { listVolunteers } from '../../api/volunteers.js';
 import { useAuth } from '../../context/AuthContext.jsx';
 

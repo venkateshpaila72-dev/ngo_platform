@@ -1,5 +1,5 @@
-import Badge from '../common/Badge.jsx';
-import EmptyState from '../common/EmptyState.jsx';
+import Badge from '../Badge.jsx';
+import EmptyState from '../EmptyState.jsx';
 
 export default function VolunteerList({ volunteers }) {
   if (!volunteers || volunteers.length === 0) {

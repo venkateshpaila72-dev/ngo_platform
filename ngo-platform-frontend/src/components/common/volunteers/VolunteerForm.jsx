@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Button from '../common/Button.jsx';
-import { registerVolunteer } from '../../api/volunteers.js';
+import Button from '../Button.jsx';
+import { registerVolunteer } from '../../../api/volunteers.js';
 
 export default function VolunteerForm({ ngoId, onCreated }) {
   const [name, setName] = useState('');
