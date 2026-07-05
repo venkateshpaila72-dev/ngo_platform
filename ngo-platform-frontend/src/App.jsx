@@ -19,7 +19,11 @@ import HeatmapPage from './pages/ngo-dashboard/HeatmapPage.jsx';
 import MatchingPage from './pages/ngo-dashboard/MatchingPage.jsx';
 import TaskDetailPage from './pages/ngo-dashboard/TaskDetailPage.jsx';
 
-// --- Phase 5, 7: NGO dashboard (not built yet) ---
+// --- Phase 6: Event Mode + Logistics dashboard UI - LIVE ---
+import EventsPage from './pages/ngo-dashboard/EventsPage.jsx';
+import LogisticsPage from './pages/ngo-dashboard/LogisticsPage.jsx';
+
+// --- Phase 7: NGO dashboard (not built yet) ---
 // import UnclaimedTasksPage from './pages/ngo-dashboard/UnclaimedTasksPage.jsx';
 // import ProofReviewPage from './pages/ngo-dashboard/ProofReviewPage.jsx';
 
@@ -47,7 +51,11 @@ function App() {
       <Route path="/dashboard/match/:needId" element={<ProtectedRoute role="ngo"><MatchingPage /></ProtectedRoute>} />
       <Route path="/dashboard/tasks/:taskId" element={<ProtectedRoute role="ngo"><TaskDetailPage /></ProtectedRoute>} />
 
-      {/* Phase 5, 7: NGO dashboard - uncomment once built
+      {/* Phase 6 - LIVE */}
+      <Route path="/dashboard/events" element={<ProtectedRoute role="ngo"><EventsPage /></ProtectedRoute>} />
+      <Route path="/dashboard/logistics" element={<ProtectedRoute role="ngo"><LogisticsPage /></ProtectedRoute>} />
+
+      {/* Phase 7: NGO dashboard - uncomment once built
       <Route path="/dashboard/unclaimed" element={<ProtectedRoute role="ngo"><UnclaimedTasksPage /></ProtectedRoute>} />
       <Route path="/dashboard/proofs" element={<ProtectedRoute role="ngo"><ProofReviewPage /></ProtectedRoute>} />
       */}

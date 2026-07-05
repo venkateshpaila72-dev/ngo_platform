@@ -4,6 +4,7 @@ import DashboardLayout from '../../components/common/DashboardLayout.jsx';
 import LoadingSpinner from '../../components/common/LoadingSpinner.jsx';
 import EmptyState from '../../components/common/EmptyState.jsx';
 import TaskDetail from '../../components/tasks/TaskDetail.jsx';
+import ChatRoom from '../../components/chat/ChatRoom.jsx';
 import { getTask } from '../../api/tasks.js';
 import { getNeed } from '../../api/needs.js';
 import { listNgos } from '../../api/ngos.js';
@@ -67,6 +68,10 @@ export default function TaskDetailPage() {
               </p>
             )}
             <TaskDetail task={task} ngoNames={ngoNames} onTaskUpdate={setTask} />
+
+            <div className="mt-8">
+              <ChatRoom taskId={task.id} />
+            </div>
           </>
         )}
       </div>

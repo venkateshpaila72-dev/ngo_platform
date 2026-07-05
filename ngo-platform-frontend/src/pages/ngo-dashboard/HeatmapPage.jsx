@@ -5,16 +5,22 @@ import NeedTypeToggle from '../../components/map/NeedTypeToggle.jsx';
 import LoadingSpinner from '../../components/common/LoadingSpinner.jsx';
 import EmptyState from '../../components/common/EmptyState.jsx';
 import { getClusters } from '../../api/clusters.js';
+import { getEventClusters } from '../../api/events.js';
+import { useEventMode } from '../../context/EventModeContext.jsx';
 
 export default function HeatmapPage() {
+  const { selectedEventId, selectedEvent } = useEventMode();
   const [clusters, setClusters] = useState(null);
   const [loading, setLoading] = useState(true);
   const [needType, setNeedType] = useState('');
 
   useEffect(() => {
     async function load() {
+      setLoading(true);
       try {
-        const data = await getClusters();
+        const data = selectedEventId
+          ? await getEventClusters(selectedEventId)
+          : await getClusters();
         setClusters(data.clusters);
       } catch (err) {
         setClusters([]);
@@ -23,7 +29,7 @@ export default function HeatmapPage() {
       }
     }
     load();
-  }, []);
+  }, [selectedEventId]);
 
   const filteredClusters = useMemo(() => {
     if (!clusters) return [];
@@ -36,8 +42,10 @@ export default function HeatmapPage() {
       <div className="px-6 sm:px-8 py-8 max-w-6xl mx-auto">
         <h1 className="font-heading font-bold text-2xl text-foreground mb-1">Heatmap</h1>
         <p className="text-sm text-muted mb-6">
-          Open needs are grouped into geographic hotspots and ranked by severity. Circle size
-          reflects need count; color reflects severity.
+          {selectedEvent
+            ? `Showing hotspots within ${selectedEvent.radius_km}km of "${selectedEvent.name}" only.`
+            : 'Open needs are grouped into geographic hotspots and ranked by severity.'}{' '}
+          Circle size reflects need count; color reflects severity.
         </p>
 
         <div className="mb-6">

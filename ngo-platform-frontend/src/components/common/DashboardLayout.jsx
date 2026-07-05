@@ -1,10 +1,16 @@
+import { useEffect, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext.jsx';
+import { getNgo } from '../../api/ngos.js';
+import ReliabilityBadge from './ReliabilityBadge.jsx';
+import EventModeBar from '../events/EventModeBar.jsx';
 
 const NAV_ITEMS = [
   { to: '/dashboard', label: 'Dashboard', end: true },
   { to: '/dashboard/needs', label: 'Needs' },
   { to: '/dashboard/heatmap', label: 'Heatmap' },
+  { to: '/dashboard/events', label: 'Event Mode' },
+  { to: '/dashboard/logistics', label: 'Logistics' },
 ];
 
 // Screens planned for later phases - shown so the sidebar reads as a
@@ -16,6 +22,21 @@ const UPCOMING_ITEMS = [{ label: 'Unclaimed Tasks' }, { label: 'Proof Review' }]
 export default function DashboardLayout({ children }) {
   const { session, logout } = useAuth();
   const navigate = useNavigate();
+  const [reliability, setReliability] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    if (session?.id) {
+      getNgo(session.id)
+        .then((data) => {
+          if (!cancelled) setReliability(data.reliability_score);
+        })
+        .catch(() => {});
+    }
+    return () => {
+      cancelled = true;
+    };
+  }, [session?.id]);
 
   const handleLogout = () => {
     logout();
@@ -62,7 +83,10 @@ export default function DashboardLayout({ children }) {
 
         <div className="p-4 border-t border-borderc">
           <p className="text-sm font-semibold text-foreground truncate">{session?.name}</p>
-          <p className="text-xs text-muted truncate mb-3">{session?.contact_email}</p>
+          <p className="text-xs text-muted truncate mb-2">{session?.contact_email}</p>
+          <div className="mb-3">
+            <ReliabilityBadge score={reliability} />
+          </div>
           <button
             onClick={handleLogout}
             className="w-full text-sm font-semibold text-critical hover:underline text-left"
@@ -72,7 +96,10 @@ export default function DashboardLayout({ children }) {
         </div>
       </aside>
 
-      <main className="flex-1 min-w-0 overflow-y-auto">{children}</main>
+      <main className="flex-1 min-w-0 overflow-y-auto flex flex-col">
+        <EventModeBar />
+        <div className="flex-1 min-w-0">{children}</div>
+      </main>
     </div>
   );
 }
