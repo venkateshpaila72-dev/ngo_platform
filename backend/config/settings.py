@@ -28,15 +28,21 @@ MIN_SAMPLES_PER_CLUSTER = 1
 
 def validate_config():
     missing = []
+
     if not FIREBASE_PROJECT_ID:
         missing.append("FIREBASE_PROJECT_ID")
-    if not FIREBASE_CREDENTIALS_PATH:
-        missing.append("FIREBASE_CREDENTIALS_PATH")
-    elif not os.path.exists(FIREBASE_CREDENTIALS_PATH):
-        print(f"[CONFIG ERROR] FIREBASE_CREDENTIALS_PATH is set but file not found at: {FIREBASE_CREDENTIALS_PATH}")
-        sys.exit(1)
+
+    # If running on Render using JSON env variable,
+    # don't require the credentials file.
+    if not os.getenv("FIREBASE_SERVICE_ACCOUNT_JSON"):
+        if not FIREBASE_CREDENTIALS_PATH:
+            missing.append("FIREBASE_CREDENTIALS_PATH")
+        elif not os.path.exists(FIREBASE_CREDENTIALS_PATH):
+            print(
+                f"[CONFIG ERROR] FIREBASE_CREDENTIALS_PATH is set but file not found at: {FIREBASE_CREDENTIALS_PATH}"
+            )
+            sys.exit(1)
 
     if missing:
         print(f"[CONFIG ERROR] Missing required .env values: {', '.join(missing)}")
-        print("Check that your .env file exists and is in the backend/ root folder.")
         sys.exit(1)
