@@ -16,6 +16,7 @@ TASKS_COLLECTION = "tasks"
 VOLUNTEERS_COLLECTION = "volunteers"
 PROOFS_COLLECTION = "proofs"
 CHAT_COLLECTION = "chat_messages"
+EVENTS_COLLECTION = "events"
 
 # Tuned during Phase 2 testing: 15km wrongly chained separate hotspots
 # together (a single bridging point merged a "water" cluster and a "food"

@@ -3,6 +3,7 @@ from typing import List, Optional
 from config.settings import NEEDS_COLLECTION, NGOS_COLLECTION, TASKS_COLLECTION
 from utils.firestore_helpers import add_document, get_all_documents, get_document, update_document
 from services.scoring_utils import score_ngo_for_need
+from services.reliability_service import adjust_reliability, COMPLETE_BONUS, DROP_PENALTY
 
 VALID_SUBTASK_STATUSES = {"assigned", "accepted", "dropped", "completed"}
 
@@ -96,6 +97,7 @@ def drop_subtask(task_id: str, ngo_id: str) -> dict:
         "sub_tasks": task["sub_tasks"],
         "status": task["status"],
     })
+    adjust_reliability(ngo_id, DROP_PENALTY)
     return task
 
 
@@ -201,6 +203,7 @@ def complete_subtask(task_id: str, ngo_id: str) -> dict:
         "sub_tasks": task["sub_tasks"],
         "status": task["status"],
     })
+    adjust_reliability(ngo_id, COMPLETE_BONUS)
 
     if task["status"] == "verified":
         update_document(NEEDS_COLLECTION, task["need_id"], {"status": "resolved"})

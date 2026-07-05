@@ -15,6 +15,7 @@ class NGO(BaseModel):
     reliability_score: float = 70.0                                 # 0-100, updated after task feedback
     contact_email: Optional[str] = None
     password_hash: Optional[str] = None                             # never returned to the client
+    en_route: Optional[dict] = None                                 # {destination: {lat,lng}, eta_minutes, updated_at}
 
     @field_validator("capabilities")
     @classmethod

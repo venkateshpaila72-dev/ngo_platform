@@ -13,5 +13,6 @@ class ProofSubmission(BaseModel):
     story_text: Optional[str] = None
     feedback_rating: Optional[int] = None
     status: str = "pending_verification"   # "pending_verification" | "approved" | "rejected"
+    distance_km: Optional[float] = None    # distance from need site at submission time
     anomaly_flagged: bool = False
     anomaly_reason: Optional[str] = None

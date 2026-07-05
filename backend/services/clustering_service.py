@@ -28,15 +28,23 @@ def _dominant_need_type(needs_in_cluster: list) -> str:
     return Counter(types).most_common(1)[0][0]
 
 
-def get_clusters() -> dict:
+def get_clusters(needs_override: list = None) -> dict:
     """
     Fetches all open needs, groups nearby ones into hotspots using DBSCAN
     (haversine distance), and returns each hotspot with a centroid,
     dominant need type, and severity score. Noise points (no nearby
     neighbors) become their own single-need cluster — nothing disappears.
+
+    needs_override: if provided, clusters this list instead of fetching all
+    open needs from Firestore. Used by event-scoped clustering (see
+    event_service.get_clusters_for_event) to scope the map to one venue
+    without duplicating the DBSCAN logic. Leave None for normal behavior.
     """
-    all_needs = get_all_documents(NEEDS_COLLECTION)
-    open_needs = [n for n in all_needs if n.get("status") == "open"]
+    if needs_override is not None:
+        open_needs = needs_override
+    else:
+        all_needs = get_all_documents(NEEDS_COLLECTION)
+        open_needs = [n for n in all_needs if n.get("status") == "open"]
 
     if not open_needs:
         return {"clusters": []}

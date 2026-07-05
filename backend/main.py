@@ -16,6 +16,8 @@ from routes import (
     chat_routes,
     story_routes,
     public_routes,
+    event_routes,
+    logistics_routes,
 )
 
 validate_config()
@@ -44,6 +46,8 @@ app.include_router(proof_routes.router)
 app.include_router(chat_routes.router)
 app.include_router(story_routes.router)
 app.include_router(public_routes.router)
+app.include_router(event_routes.router)
+app.include_router(logistics_routes.router)
 
 
 @app.get("/")
