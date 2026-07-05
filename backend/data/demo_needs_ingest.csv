@@ -1,0 +1,16 @@
+Latitude,Longitude,Required Supply,Urgency,Notes,Quantity,Unit
+16.512,80.651,water,critical,Village well collapsed after heavy rain,1200,liters
+16.516,80.655,water,high,Tanker supply delayed by two days,900,liters
+16.520,80.648,food,high,Ration shop empty for over a week,600,meals
+16.628,80.718,shelter,critical,Flood displaced 40 families overnight,25,tents
+16.632,80.722,shelter,high,Temporary camp needs additional tarps,15,tents
+16.635,80.715,medical,critical,No clinic access for 20km radius,50,kits
+15.668,79.978,food,medium,Crop failure due to prolonged drought,800,meals
+15.672,79.982,food,medium,Daily wage families cannot afford rations,700,meals
+15.665,79.975,water,low,Minor shortage reported near canal,400,liters
+14.448,79.992,medical,critical,Seasonal fever outbreak with no medicine stock,40,kits
+14.452,79.988,medical,high,Pregnant women unable to reach hospital,30,kits
+13.222,79.108,education,high,School roof damaged; classes held outdoors,10,kits
+13.226,79.104,education,medium,No teacher assigned for the semester,,
+16.495,80.615,water,high,Hand pump broken for over three weeks,500,liters
+16.499,80.611,shelter,medium,Roof damage from storm ahead of monsoon,12,tents
