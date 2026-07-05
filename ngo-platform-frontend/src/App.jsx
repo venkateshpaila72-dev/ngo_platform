@@ -15,9 +15,11 @@ import DashboardHome from './pages/ngo-dashboard/DashboardHome.jsx';
 import NeedsPage from './pages/ngo-dashboard/NeedsPage.jsx';
 import HeatmapPage from './pages/ngo-dashboard/HeatmapPage.jsx';
 
-// --- Phase 4-5, 7: NGO dashboard (not built yet) ---
-// import MatchingPage from './pages/ngo-dashboard/MatchingPage.jsx';
-// import TaskDetailPage from './pages/ngo-dashboard/TaskDetailPage.jsx';
+// --- Phase 4: Matching + Task management - LIVE ---
+import MatchingPage from './pages/ngo-dashboard/MatchingPage.jsx';
+import TaskDetailPage from './pages/ngo-dashboard/TaskDetailPage.jsx';
+
+// --- Phase 5, 7: NGO dashboard (not built yet) ---
 // import UnclaimedTasksPage from './pages/ngo-dashboard/UnclaimedTasksPage.jsx';
 // import ProofReviewPage from './pages/ngo-dashboard/ProofReviewPage.jsx';
 
@@ -41,9 +43,11 @@ function App() {
       <Route path="/dashboard/needs" element={<ProtectedRoute role="ngo"><NeedsPage /></ProtectedRoute>} />
       <Route path="/dashboard/heatmap" element={<ProtectedRoute role="ngo"><HeatmapPage /></ProtectedRoute>} />
 
-      {/* Phase 4-5, 7: NGO dashboard - uncomment once built
+      {/* Phase 4 - LIVE */}
       <Route path="/dashboard/match/:needId" element={<ProtectedRoute role="ngo"><MatchingPage /></ProtectedRoute>} />
       <Route path="/dashboard/tasks/:taskId" element={<ProtectedRoute role="ngo"><TaskDetailPage /></ProtectedRoute>} />
+
+      {/* Phase 5, 7: NGO dashboard - uncomment once built
       <Route path="/dashboard/unclaimed" element={<ProtectedRoute role="ngo"><UnclaimedTasksPage /></ProtectedRoute>} />
       <Route path="/dashboard/proofs" element={<ProtectedRoute role="ngo"><ProofReviewPage /></ProtectedRoute>} />
       */}

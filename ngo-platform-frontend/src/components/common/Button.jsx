@@ -15,6 +15,7 @@ export default function Button({
     primary: 'bg-primary text-white hover:bg-primary-dark',
     outline: 'border border-primary text-primary hover:bg-primary/5',
     ghost: 'text-muted hover:text-primary',
+    danger: 'bg-critical text-white hover:bg-critical/90',
   };
 
   return (

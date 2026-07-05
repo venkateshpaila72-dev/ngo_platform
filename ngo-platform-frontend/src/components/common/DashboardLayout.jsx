@@ -7,13 +7,11 @@ const NAV_ITEMS = [
   { to: '/dashboard/heatmap', label: 'Heatmap' },
 ];
 
-// Screens planned for later phases — shown so the sidebar reads as a
-// complete map of the product, but not yet clickable.
-const UPCOMING_ITEMS = [
-  { label: 'Matching' },
-  { label: 'Unclaimed Tasks' },
-  { label: 'Proof Review' },
-];
+// Screens planned for later phases - shown so the sidebar reads as a
+// complete map of the product, but not yet clickable. Matching and task
+// detail are live now, but reached contextually from the Needs table
+// rather than a standalone nav item.
+const UPCOMING_ITEMS = [{ label: 'Unclaimed Tasks' }, { label: 'Proof Review' }];
 
 export default function DashboardLayout({ children }) {
   const { session, logout } = useAuth();
