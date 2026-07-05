@@ -263,3 +263,30 @@ def get_task(task_id: str) -> dict:
     if task is None:
         raise ValueError(f"Task not found: {task_id}")
     return task
+
+
+def list_tasks_for_ngo(ngo_id: str, active_only: bool = False) -> dict:
+    """Returns every task that has a sub_task belonging to this NGO.
+
+    Volunteers aren't individually assigned to a sub-task until they submit
+    a proof (see proof_service.submit_proof), so 'a volunteer's tasks' means
+    'their NGO's tasks' - any volunteer at that NGO can pick one up and
+    submit proof for it. active_only=True excludes sub-tasks that are
+    already 'dropped' or 'completed', for a volunteer's home screen.
+    """
+    all_tasks = get_all_documents(TASKS_COLLECTION)
+    matching = [
+        t for t in all_tasks
+        if "sub_tasks" in t and any(st["ngo_id"] == ngo_id for st in t["sub_tasks"])
+    ]
+
+    if active_only:
+        matching = [
+            t for t in matching
+            if any(
+                st["ngo_id"] == ngo_id and st["status"] in ("assigned", "accepted", "pending_verification")
+                for st in t["sub_tasks"]
+            )
+        ]
+
+    return {"count": len(matching), "tasks": matching}

@@ -19,3 +19,9 @@ export const SUBTASK_STATUS_LABELS = {
   dropped: 'Dropped',
   completed: 'Completed',
 };
+
+export const PROOF_STATUS_LABELS = {
+  pending_verification: 'Pending Review',
+  approved: 'Approved',
+  rejected: 'Rejected',
+};

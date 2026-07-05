@@ -23,13 +23,14 @@ import TaskDetailPage from './pages/ngo-dashboard/TaskDetailPage.jsx';
 import EventsPage from './pages/ngo-dashboard/EventsPage.jsx';
 import LogisticsPage from './pages/ngo-dashboard/LogisticsPage.jsx';
 
-// --- Phase 7: NGO dashboard (not built yet) ---
-// import UnclaimedTasksPage from './pages/ngo-dashboard/UnclaimedTasksPage.jsx';
-// import ProofReviewPage from './pages/ngo-dashboard/ProofReviewPage.jsx';
+// --- Phase 7: NGO dashboard - LIVE ---
+import UnclaimedTasksPage from './pages/ngo-dashboard/UnclaimedTasksPage.jsx';
+import ProofReviewPage from './pages/ngo-dashboard/ProofReviewPage.jsx';
+import VolunteersPage from './pages/ngo-dashboard/VolunteersPage.jsx';
 
-// --- Phase 7: Volunteer dashboard (not built yet) ---
-// import VolunteerHome from './pages/volunteer-dashboard/VolunteerHome.jsx';
-// import ProofSubmitPage from './pages/volunteer-dashboard/ProofSubmitPage.jsx';
+// --- Phase 7: Volunteer dashboard - LIVE ---
+import VolunteerHome from './pages/volunteer-dashboard/VolunteerHome.jsx';
+import ProofSubmitPage from './pages/volunteer-dashboard/ProofSubmitPage.jsx';
 
 function App() {
   return (
@@ -55,15 +56,13 @@ function App() {
       <Route path="/dashboard/events" element={<ProtectedRoute role="ngo"><EventsPage /></ProtectedRoute>} />
       <Route path="/dashboard/logistics" element={<ProtectedRoute role="ngo"><LogisticsPage /></ProtectedRoute>} />
 
-      {/* Phase 7: NGO dashboard - uncomment once built
+      {/* Phase 7 - LIVE */}
       <Route path="/dashboard/unclaimed" element={<ProtectedRoute role="ngo"><UnclaimedTasksPage /></ProtectedRoute>} />
       <Route path="/dashboard/proofs" element={<ProtectedRoute role="ngo"><ProofReviewPage /></ProtectedRoute>} />
-      */}
+      <Route path="/dashboard/volunteers" element={<ProtectedRoute role="ngo"><VolunteersPage /></ProtectedRoute>} />
 
-      {/* Phase 7: Volunteer dashboard - uncomment once built
       <Route path="/volunteer" element={<ProtectedRoute role="volunteer"><VolunteerHome /></ProtectedRoute>} />
       <Route path="/volunteer/submit/:taskId" element={<ProtectedRoute role="volunteer"><ProofSubmitPage /></ProtectedRoute>} />
-      */}
     </Routes>
   );
 }

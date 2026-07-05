@@ -1,6 +1,6 @@
 from typing import Optional
 from config.settings import NEEDS_COLLECTION, PROOFS_COLLECTION, TASKS_COLLECTION
-from utils.firestore_helpers import add_document, get_document, update_document
+from utils.firestore_helpers import add_document, get_all_documents, get_document, update_document
 from utils.geo_utils import haversine_distance_km
 from services.task_service import _find_subtask, complete_subtask, drop_subtask
 from services.anomaly_service import detect_ml_anomaly
@@ -89,3 +89,18 @@ def verify_proof(proof_id: str, approve: bool) -> dict:
         proof["status"] = "rejected"
 
     return proof
+
+
+def list_proofs(status: Optional[str] = None, ngo_id: Optional[str] = None) -> dict:
+    """Returns proofs, optionally filtered by status ('pending_verification' |
+    'approved' | 'rejected') and/or ngo_id. Newest first. Powers the admin
+    Proof Review queue and a volunteer's own submission history."""
+    proofs = get_all_documents(PROOFS_COLLECTION)
+
+    if status:
+        proofs = [p for p in proofs if p.get("status") == status]
+    if ngo_id:
+        proofs = [p for p in proofs if p.get("ngo_id") == ngo_id]
+
+    proofs.sort(key=lambda p: p.get("created_at", ""), reverse=True)
+    return {"count": len(proofs), "proofs": proofs}

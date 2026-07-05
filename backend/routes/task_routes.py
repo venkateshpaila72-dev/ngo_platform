@@ -8,6 +8,7 @@ from services.task_service import (
     create_split_task,
     drop_subtask,
     get_task,
+    list_tasks_for_ngo,
     list_unclaimed_tasks,
     reassign_subtask,
     resolve_task_with_gap,
@@ -42,6 +43,14 @@ def split_assign(need_id: str, body: SplitAssignRequest):
 def unclaimed_tasks():
     """Dashboard endpoint: tasks with a dropped, unreassigned sub-task."""
     return list_unclaimed_tasks()
+
+
+@router.get("/ngos/{ngo_id}/tasks")
+def ngo_tasks(ngo_id: str, active_only: bool = False):
+    """Every task touching this NGO. Used by the volunteer dashboard
+    (active_only=true - work still open for pickup) and can also back an
+    NGO-side 'my tasks' view (active_only=false - full history)."""
+    return list_tasks_for_ngo(ngo_id, active_only=active_only)
 
 
 @router.get("/tasks/{task_id}")

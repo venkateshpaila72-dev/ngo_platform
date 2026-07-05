@@ -11,13 +11,16 @@ const NAV_ITEMS = [
   { to: '/dashboard/heatmap', label: 'Heatmap' },
   { to: '/dashboard/events', label: 'Event Mode' },
   { to: '/dashboard/logistics', label: 'Logistics' },
+  { to: '/dashboard/volunteers', label: 'Volunteers' },
+  { to: '/dashboard/unclaimed', label: 'Unclaimed Tasks' },
+  { to: '/dashboard/proofs', label: 'Proof Review' },
 ];
 
 // Screens planned for later phases - shown so the sidebar reads as a
 // complete map of the product, but not yet clickable. Matching and task
 // detail are live now, but reached contextually from the Needs table
 // rather than a standalone nav item.
-const UPCOMING_ITEMS = [{ label: 'Unclaimed Tasks' }, { label: 'Proof Review' }];
+const UPCOMING_ITEMS = [];
 
 export default function DashboardLayout({ children }) {
   const { session, logout } = useAuth();
@@ -68,17 +71,21 @@ export default function DashboardLayout({ children }) {
             </NavLink>
           ))}
 
-          <p className="px-3 pt-4 pb-1 text-xs font-semibold text-muted uppercase tracking-wide">
-            Coming soon
-          </p>
-          {UPCOMING_ITEMS.map((item) => (
-            <span
-              key={item.label}
-              className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted/60 cursor-not-allowed"
-            >
-              {item.label}
-            </span>
-          ))}
+          {UPCOMING_ITEMS.length > 0 && (
+            <>
+              <p className="px-3 pt-4 pb-1 text-xs font-semibold text-muted uppercase tracking-wide">
+                Coming soon
+              </p>
+              {UPCOMING_ITEMS.map((item) => (
+                <span
+                  key={item.label}
+                  className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted/60 cursor-not-allowed"
+                >
+                  {item.label}
+                </span>
+              ))}
+            </>
+          )}
         </nav>
 
         <div className="p-4 border-t border-borderc">

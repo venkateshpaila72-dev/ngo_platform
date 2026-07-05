@@ -2,7 +2,7 @@ from typing import Optional
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from models.need import Location
-from services.proof_service import submit_proof, verify_proof
+from services.proof_service import list_proofs, submit_proof, verify_proof
 
 router = APIRouter()
 
@@ -19,6 +19,14 @@ class ProofSubmitRequest(BaseModel):
 
 class VerifyRequest(BaseModel):
     approve: bool
+
+
+@router.get("/proofs")
+def get_proofs(status: Optional[str] = None, ngo_id: Optional[str] = None):
+    """Lists proofs, optionally filtered by status and/or ngo_id.
+    e.g. /proofs?status=pending_verification&ngo_id=abc123 for the admin
+    review queue, or /proofs?ngo_id=abc123 for an NGO's full history."""
+    return list_proofs(status, ngo_id)
 
 
 @router.post("/proofs/submit")

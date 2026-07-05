@@ -34,6 +34,12 @@ export const SUBTASK_STATUS_STYLES = {
   completed: { badge: 'bg-success text-white', hex: '#059669' },
 };
 
+export const PROOF_STATUS_STYLES = {
+  pending_verification: { badge: 'bg-warning text-white', hex: '#EA580C' },
+  approved: { badge: 'bg-success text-white', hex: '#059669' },
+  rejected: { badge: 'bg-critical text-white', hex: '#DC2626' },
+};
+
 const FALLBACK = { badge: 'bg-muted text-white', hex: '#64748B' };
 
 export const getSeverityBadgeClass = (severity) =>
@@ -57,3 +63,8 @@ export const getSubtaskBadgeClass = (status) =>
 
 export const getSubtaskHex = (status) =>
   (SUBTASK_STATUS_STYLES[status] || FALLBACK).hex;
+
+export const getProofBadgeClass = (status) =>
+  (PROOF_STATUS_STYLES[status] || FALLBACK).badge;
+
+export const getProofHex = (status) => (PROOF_STATUS_STYLES[status] || FALLBACK).hex;

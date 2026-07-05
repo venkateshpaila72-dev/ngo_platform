@@ -29,3 +29,10 @@ export const updateAvailability = async (ngoId, activeCapacity) => {
   });
   return res.data;
 };
+
+export const getTasksForNgo = async (ngoId, activeOnly = false) => {
+  const res = await axiosClient.get(`/ngos/${ngoId}/tasks`, {
+    params: { active_only: activeOnly },
+  });
+  return res.data;
+};
